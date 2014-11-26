@@ -4,12 +4,9 @@ __author__ = 'asim'
 # a separate line, except backwards.
 #-----------------------------------------------------------------------------------------------------------------------
 myString = "Banana The fruit"
-print len(myString)
-
-print myString[-1]
-index = 0
+index = len(myString)
 while index > 0:
-    print myString[len(myString)]
+    print myString[index]
     index = index-1
 print "done"
 
