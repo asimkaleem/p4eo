@@ -33,8 +33,29 @@
 #Exercise 6.2 Given that fruit is a string, what does fruit[:] mean?
 # fruit = 'orange'
 # print fruit[:]
-#
-# asdf
+#-----------------------------------------------------------------------------------------------------------------------
+# Exercise 6.3 Encapsulate this code in a function named count, and generalize it
+# so that it accepts the string and the letter as arguments.
+# def count(word):
+#     x = 0
+#     for letter in word:
+#         if letter == 'a':
+#             x = x + 1
+#     return x
+
+# myString = raw_input("Please enter a fruit name and it will give you back count of letter 'a' in it: ")
+# print count(myString)
+
+#-----------------------------------------------------------------------------------------------------------------------
+# fruit = "Orange"
+# print 'a' in fruit
+#-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
 
 
 
