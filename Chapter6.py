@@ -1,29 +1,3 @@
-fruit = "Banana"
-print fruit[1]
-
-
-
-
-
-# __author__ = 'asim'
-# Exercise 6.1 Write a while loop that starts at the last character in the string and
-# works its way backwards to the first character in the string, printing each letter on
-# a separate line, except backwards.
-
-
-
-#-----------------------------------------------------------------------------------------------------------------------
-# __author__ = 'asim'
-# fruit = 'banana'
-# print fruit[1]
-# print "length of string is ", len(fruit)
-#
-# length = len(fruit)
-# print fruit[length-1]
-#
-# print fruit[-1]
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # looping through the string.
 # Example # 1
 # myString = raw_input("Please enter a string: ")
@@ -32,7 +6,11 @@ print fruit[1]
 #     letter = myString[index]
 #     print letter
 #     index = index+1
-
+#-----------------------------------------------------------------------------------------------------------------------
+# __author__ = 'asim'
+# Exercise 6.1 Write a while loop that starts at the last character in the string and
+# works its way backwards to the first character in the string, printing each letter on
+# a separate line, except backwards.
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Exercise 6.1 Write a while loop that starts at the last character in the string and works its way backwards to the
 # first character in the string, printing each letter on a separate line, except backwards
