@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # looping through the string.
 # Example # 1
 # myString = raw_input("Please enter a string: ")
@@ -50,8 +53,35 @@
 # fruit = "Orange"
 # print 'a' in fruit
 #-----------------------------------------------------------------------------------------------------------------------
+# Exercise 6.4 There is a string method called count that is similar to the function
+# in the previous exercise. Read the documentation of this method at docs.python.
+# org/library/string.html and write an invocation that counts the number of
+# times the letter a occurs in 'banana'.
+#-----------------------------------------------------------------------------------------------------------------------
+# fruit = raw_input("Please enter some fruit name: ")
+# print "No of A's in your given string are: ",fruit.lower().count('a')
 
-asdf
+#-----------------------------------------------------------------------------------------------------------------------
+# Exercise 6.5 Take the following Python code that stores a string:‘
+# str = 'X-DSPAM-Confidence: 0.8475'
+# Use find and string slicing to extract the portion of the string after the colon character and then use the float
+# function to convert the extracted string into a floating point number.
+#-----------------------------------------------------------------------------------------------------------------------
+# str = "X-DSPAM-Confidence: 0.8475"
+# pos = str.find(":")
+# getNumber = float(str[pos+1:])
+# print getNumber
+
+#-----------------------------------------------------------------------------------------------------------------------
+# Exercise 6.6 Read the documentation of the string methods at docs.python.org/lib/string-methods.html. You might want
+# to experiment with some of them to make sure you understand how they work. strip and replace are particularly useful.
+#Done
+
+
+
+
+
+
 
 
 
