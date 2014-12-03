@@ -1,2 +1,4 @@
-__author__ = 'asim'
-asdf
+# __author__ = 'asim'
+# fhand = open('mbox.txt')
+# print fhand
+#
