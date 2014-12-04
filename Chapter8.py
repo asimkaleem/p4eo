@@ -60,9 +60,36 @@ __author__ = 'asim'
 #-----------------------------------------------------------------------------------------------------------------------
 #Deleting Elements:
 #-----------------------------------------------------------------------------------------------------------------------
-old_list = [1,2,3,4,5,6,7,8,9]
-new_list = old_list.pop(0)
-print new_list
-print "old list after pop: ", old_list
-old_list = old_list.pop()
-print "old list after second pop: ", old_list
+# old_list = [1,2,3,4,5,6,7,8,9]
+# new_list = old_list.pop(0)
+# print new_list
+# print "old list after pop: ", old_list
+# old_list = old_list.pop()
+# print "old list after second pop: ", old_list
+
+# numlist = list()
+# while (True):
+#     inp = raw_input("PLease enter a number: ")
+#     if inp == 'done' :break
+#     value= float(inp)
+#     numlist.append(value)
+#     average = sum(numlist) / len(numlist)
+# print "Average", average
+
+#-----------------------------------------------------------------------------------------------------------------------
+#Lists and Strings
+#-----------------------------------------------------------------------------------------------------------------------
+s = 'spam what it is'
+myList = list(s)
+for letter in myList:
+    if letter == '':
+        newlist = myList.pop(letter)
+print "This is the orignal string:", s
+print myList
+print newlist
+
+
+
+
+
+
