@@ -79,14 +79,32 @@ __author__ = 'asim'
 #-----------------------------------------------------------------------------------------------------------------------
 #Lists and Strings
 #-----------------------------------------------------------------------------------------------------------------------
-s = 'spam what it is'
-myList = list(s)
-for letter in myList:
-    if letter == '':
-        newlist = myList.pop(letter)
-print "This is the orignal string:", s
-print myList
-print newlist
+# s = 'pining for the fjords'
+# t = s.split()
+# print t
+# print t[2]
+
+
+# s = 'spam-spam-spam'
+# delimiter = '-'
+# print s.split(delimiter)
+# print s
+
+# t = ['pining', 'for', 'the', 'fjords']
+# delimiter = ' '
+# print delimiter.join(t)
+
+fhand = open('mbox-short.txt')
+for line in fhand:
+    line = line.rstrip()
+    if not line.startswith('From ') : continue
+    words = line.split()
+print words[2]
+
+
+
+
+
 
 
 
