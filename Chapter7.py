@@ -62,16 +62,29 @@ __author__ = 'asim'
 # and produce an output as shown below.
 #-----------------------------------------------------------------------------------------------------------------------
 # Use the file name mbox-short.txt as the file name
-fname = raw_input("Enter file name: ")
-fh = open(fname)
-total = 0
-count = 0
-for line in fh:
-    if line.startswith("X-DSPAM-Confidence:"):
-        pos = line.find(":")
-        count = count+1
-        getNumber = float(line[pos+1:])
-        total = total+getNumber
-average = total/count
-print "Average spam confidence:" ,average
+# fname = raw_input("Enter file name: ")
+# fh = open(fname)
+# total = 0
+# count = 0
+# for line in fh:
+#     if line.startswith("X-DSPAM-Confidence:"):
+#         pos = line.find(":")
+#         count = count+1
+#         getNumber = float(line[pos+1:])
+#         total = total+getNumber
+# average = total/count
+# print "Average spam confidence:" ,average
+
+
+
+firstList = list()
+firstList.append("Hello World")
+secondList = ["Hello Second"]
+finalList= firstList + secondList
+
+print "First List", firstList
+print "Second List", secondList
+print "Final List", finalList
+
+
 
