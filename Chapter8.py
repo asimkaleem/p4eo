@@ -79,10 +79,10 @@ __author__ = 'asim'
 #-----------------------------------------------------------------------------------------------------------------------
 #Lists and Strings
 #-----------------------------------------------------------------------------------------------------------------------
-# s = 'pining for the fjords'
-# t = s.split()
-# print t
-# print t[2]
+s = 'pining for the fjords'
+t = s.split()
+print t
+print t[2]
 
 
 # s = 'spam-spam-spam'
@@ -94,20 +94,52 @@ __author__ = 'asim'
 # delimiter = ' '
 # print delimiter.join(t)
 
-fhand = open('mbox-short.txt')
-for line in fhand:
-    line = line.rstrip()
-    if not line.startswith('From ') : continue
-    words = line.split()
-print words[2]
+# fhand = open('mbox-short.txt')
+# for line in fhand:
+#     line = line.rstrip()
+#     if not line.startswith('From ') : continue
+#     words = line.split()
+# print words[2]
 
 
 
 
 
+# print range(5)
 
 
+# a = [1, 2, 3]
+# b = [4, 5, 6]
+# c = a + b
+# print len(c)
+
+#
+# t = [9, 41, 12, 3, 74, 15]
+# print t
+# t.append(16)
+# print t
+
+#
+# friends = [ 'Joseph', 'Glenn', 'Sally' ]
+# friends.sort()
+# print friends[0]
+
+# fruit = 'Banana'
+# fruit[0] = 'b'
+# print fruit
 
 
+#
+#  8.4 Open the file romeo.txt
+# read it line by line. For each line, split the line into a list of words using the
+# split() function. The program should build a list of words. For each word on each line check to see if the word is
+# already in the list and if not append it to the list. When the program completes, sort and print the resulting words
+# in alphabetical order.
+#
+# You can download the sample data at http://www.pythonlearn.com/code/romeo.txt
 
-
+# fname = raw_input("Enter file name: ")
+# fh = open(fname)
+# lst = list()
+# for line in fh:
+#     print line.rstrip()
