@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-__author__ = 'asim'
+# __author__ = 'asim'
 # fhand = open('mbox.txt')
 # fhand = open('mbox-short.txt')
 #
@@ -76,15 +76,15 @@ __author__ = 'asim'
 # print "Average spam confidence:" ,average
 
 
-
-firstList = list()
-firstList.append("Hello World")
-secondList = ["Hello Second"]
-finalList= firstList + secondList
-
-print "First List", firstList
-print "Second List", secondList
-print "Final List", finalList
+#
+# firstList = list()
+# firstList.append("Hello World")
+# secondList = ["Hello Second"]
+# finalList= firstList + secondList
+#
+# print "First List", firstList
+# print "Second List", secondList
+# print "Final List", finalList
 
 
 
