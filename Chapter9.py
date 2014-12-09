@@ -30,22 +30,34 @@ __author__ = 'asim'
 # dictionary.
 #-----------------------------------------------------------------------------------------------------------------------
 
-fhand = open("words.txt")
-lineCount = 0
-wordCount = 0
-myDict = {}
+# fhand = open("words.txt")
+# lineCount = 0
+# wordCount = 0
+# myDict = {}
+#
+# for lines in fhand:
+#     lineCount = lineCount + 1
+#     words = lines.split()
+#
+#     for word in words:
+#         myDict[word] = word
+#         wordCount = wordCount+1
+#
+# print myDict
+# print lineCount
+# print wordCount
 
-for lines in fhand:
-    lineCount = lineCount + 1
-    words = lines.split()
-
-    for word in words:
-        myDict[word] = word
-        wordCount = wordCount+1
-
-print myDict
-print lineCount
-print wordCount
-
+#-----------------------------------------------------------------------------------------------------------------------
+# you are given a string and you want to count how many times each letter
+# appears.
+#-----------------------------------------------------------------------------------------------------------------------
+word = 'nonteneous'
+d = dict()
+for c in word:
+    if c not in d:
+        d[c]= 1
+    else:
+        d[c] = d[c]+1
+print d
 
 
