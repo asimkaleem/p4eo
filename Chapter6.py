@@ -3,11 +3,11 @@
 
 # looping through the string.
 # Example # 1
-# myString = raw_input("Please enter a string: ")
+# myString = input("Please enter a string: ")
 # index = 0
 # while index < len(myString):
 #     letter = myString[index]
-#     print letter
+#     print(index, ":",letter)
 #     index = index+1
 #-----------------------------------------------------------------------------------------------------------------------
 # __author__ = 'asim'
@@ -17,12 +17,12 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Exercise 6.1 Write a while loop that starts at the last character in the string and works its way backwards to the
 # first character in the string, printing each letter on a separate line, except backwards
-#
-# myString = raw_input("Please enter a string: ")
+
+# myString = input("Please enter a string: ")
 # index = len(myString)
 # while index > 0:
 #     letter = myString[index-1]
-#     print letter
+#     print(index,":", letter)
 #     index = index-1
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -77,7 +77,32 @@
 # to experiment with some of them to make sure you understand how they work. strip and replace are particularly useful.
 #Done
 
+#-----------------------------------------------------------------------------------------------------------------------
+# Write a Python program to calculate the length of a string
+# my_string = input("Please enter a string: ")
+# print("You have entered string:", my_string)
+# print("Its length is: ", len(my_string))
 
+#-----------------------------------------------------------------------------------------------------------------------
+# Write a Python program to count the number of characters (character frequency) in a string.
+# Expected Result : {'o': 3, 'g': 2, '.': 1, 'e': 1, 'l': 1, 'm': 1, 'c': 1}
+# my_string = input("Please enter your string: ")
+# letter_count = {}
+# index = 0
+# for letter in my_string:
+#     if letter.lower() in letter_count:
+#         letter_count[letter.lower()] += 1
+#     else:
+#         letter_count[letter.lower()] = 1
+#
+# print(letter_count)
+
+#-----------------------------------------------------------------------------------------------------------------------
+# Define a function that computes the length of a given list or string. (It is true that Python has the len()
+# function built in, but writing it yourself is nevertheless a good exercise.)
+my_string = input("Please enter a string for length count: ")
+str_len =
+for letter
 
 
 
