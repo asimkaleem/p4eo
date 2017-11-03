@@ -1,30 +1,31 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# __author__ = 'asim'
+__author__ = 'asim'
+# OUt of two
 # fhand = open('mbox.txt')
 # fhand = open('mbox-short.txt')
 #
 # count = 0
 # for line in fhand:
 #     count = count+1
-# print "Line Count: ", count
+# print("Line Count: ", count)
 
 #-----------------------------------------------------------------------------------------------------------------------
 # Read relatively small files
 #-----------------------------------------------------------------------------------------------------------------------
 # fhand = open("mbox-short.txt")
 # inp = fhand.read()
-#prints length of a file.
-# print len(inp)
-#prints first 20 characters of file.
-# print inp[:20]
+# # prints length of a file.
+# print(len(inp))
+# # prints first 20 characters of file.
+# print(inp[:20])
 # fhand = open('mbox-short.txt')
 # count = 0
 # for line in fhand:
 #     if line.startswith('From:'):
 #         count = count+1
-#         print str(count) + "-->" + line.rstrip()
-# print "EOF"
+#         print( str(count) + "-->" + line.rstrip())
+# print( "EOF")
 # fhand = open('mbox-short.txt')
 # for line in fhand:
 #     line = line.rstrip()
@@ -32,7 +33,7 @@
 #     if not line.startswith('From:') :
 #         continue
 #     # Process our 'interesting' line
-#     print line
+#     print( line)
 #-----------------------------------------------------------------------------------------------------------------------
 # Exercise 7.3 Sometimes when programmers get bored or want to have a bit of fun,they add a harmless Easter Egg to their
 # program (en.wikipedia.org/wiki/Easter_egg_(media)). Modify the program that prompts the user for the file name so that
@@ -62,18 +63,18 @@
 # and produce an output as shown below.
 #-----------------------------------------------------------------------------------------------------------------------
 # Use the file name mbox-short.txt as the file name
-# fname = raw_input("Enter file name: ")
-# fh = open(fname)
-# total = 0
-# count = 0
-# for line in fh:
-#     if line.startswith("X-DSPAM-Confidence:"):
-#         pos = line.find(":")
-#         count = count+1
-#         getNumber = float(line[pos+1:])
-#         total = total+getNumber
-# average = total/count
-# print "Average spam confidence:" ,average
+fname = input("Enter file name: ")
+fh = open(fname)
+total = 0
+count = 0
+for line in fh:
+    if line.startswith("X-DSPAM-Confidence:"):
+        pos = line.find(":")
+        count = count+1
+        getNumber = float(line[pos+1:])
+        total = total+getNumber
+average = total/count
+print("Average spam confidence:" ,average)
 
 
 #
