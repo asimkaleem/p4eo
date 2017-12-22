@@ -1,0 +1,41 @@
+ empsf[2271]: tid 2411: [empsf.INFO]: Read queue id 3ywrs94MbQzqPJh, 
+ empsf[2271]: tid 2411: [empsf.INFO]: 1 email notification(s) processed this read (max 3000) (bytes 32)
+ empsf[2271]: tid 15580: [empsf.INFO]: SMTP header separator found after:1 reads
+ empsf[2271]: tid 15580: [empsf.NOTICE]: Queue ID 3ywrs94MbQzqPJh message size 742
+ empsf[2271]: tid 15580: [empsf.INFO]: bf: total typosquat sender bloom filter check cost in ms:0, lock cost in ms:0, lookup cost in ms:0
+ empsf[2271]: tid 15580: [empsf.INFO]: 3ywrs94MbQzqPJh: Encoding 7BIT
+ empsf[2271]: tid 15580: [empsf.INFO]: 3ywrs94MbQzqPJh: Part Num 1, GMIME_IS_PART, Content-Type: text/plain
+ empsf[2271]: tid 15580: [empsf.INFO]: url: http://12.68.100.51/calc.exe
+ empsf[2271]: tid 15580: [empsf.INFO]: Found 1 URLs in email subject; URLs skipped 0
+ empsf[2271]: tid 15580: [empsf.INFO]: url: http://12.68.100.51/calc.exe
+ empsf[2271]: tid 15580: [empsf.INFO]: url: http://bestfreedns.in//load.php?spl=MS09-002
+ empsf[2271]: tid 15580: [empsf.INFO]: Processing text body: Found 1 URLs, Skipped 0 URLs
+ empsf[2271]: tid 15580: [empsf.INFO]: UA req: array size for json is: 2
+ empsf[2271]: tid 15580: [empsf.INFO]: UA req: Email context not available
+ empsf[2271]: tid 15580: [empsf.INFO]: Using timeouts: start=7, total=15
+ empsf[2271]: tid 15580: [empsf.INFO]: Dnld[sub_id=0] User provided timeout overrides: total=15, start=7
+ empsf[2271]: tid 15580: [empsf.INFO]: Dnld[sub_id=0] Not enforcing interface
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: [req_id=792]: SNORT req: payload={"urls": [{"url": "http://12.68.100.51/calc.exe", "index": 1}, {"url": "http://bestfreedns.in//load.php?spl=MS09-002", "index": 2}]}
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: url_id=0, msg_name=Malicious.URL, sid=83433638 is malicious
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: url_id=1, msg_name=Exploit.JS.Pdfka.bde, sid=89010108 is malicious
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: SNORT alert: url_id=1, match rule "Trojan.EXE.FEBeta"(sid 88000012), type 4 (1 of 6)
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: For url_id=0, expecting malicious event, so dropping this non-mal event. msg_name=Trojan.EXE.FEBeta, sid=88000012
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: SNORT alert: url_id=1, match rule "Malicious.URL"(sid 83433638), type 4 (2 of 6)
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: url_id=0, msg_name=Malicious.URL, sid=83433638 is malicious
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: SNORT alert: non-FEBeta: http://12.68.100.51/calc.exe match rule Malicious.URL (sid 83433638)
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: SNORT alert: url_id=2, match rule "Exploit.JS.Pdfka.bde"(sid 89010108), type 10 (3 of 6)
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: SNORT alert: non-FEBeta: http://bestfreedns.in//load.php?spl=MS09-002 match rule Exploit.JS.Pdfka.bde (sid 89010108)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Advance URL DEfence Portion~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: SNORT alert: url_id=2, match rule "Malicious.URL.FEBeta"(sid 88970678), type 4 (4 of 6)
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: SNORT alert: AUD: "http://bestfreedns.in//load.php?spl=MS09-002" match rule "Malicious.URL.FEBeta" (sid 88970678)
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: PREF: NOT whitelisted, process further http://bestfreedns.in//load.php?spl=MS09-002, domain: bestfreedns.in
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: SNORT alert: url_id=2, match rule "Malicious.URL.FEBeta"(sid 88970506), type 4 (5 of 6)
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: SNORT alert: AUD: "http://bestfreedns.in//load.php?spl=MS09-002" match rule "Malicious.URL.FEBeta" (sid 88970506)
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: PREF: NOT whitelisted, process further http://bestfreedns.in//load.php?spl=MS09-002, domain: bestfreedns.in
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: SNORT alert: url_id=2, match rule "Malicious.URL.FEBeta"(sid 88970363), type 4 (6 of 6)
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: SNORT alert: AUD: "http://bestfreedns.in//load.php?spl=MS09-002" match rule "Malicious.URL.FEBeta" (sid 88970363)
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: PREF: NOT whitelisted, process further http://bestfreedns.in//load.php?spl=MS09-002, domain: bestfreedns.in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: UA stat: Tot=8 (Alias=0, BlWl=0, TypoSq=0, Phish=0, Snort=7(wait=0,urls=2), FAUDE=0, Alexa=0)
+ url_analyser[4222]: tid 4716: [url_analyser.INFO]: Return JSON from UA: "{"mal_count": 0, "urls": [{"verdict": 222, "properties": {"score": 0, "sa_result": [{"engine": "url_snort_analysis", "note": "", "weight": 100, "signature": "Malicious.URL", "signature_iden": 83433638}]}, "url": "http://12.68.100.51/calc.exe"}, {"verdict": 222, "properties": {"score": 0, "sa_result": [{"engine": "url_snort_analysis", "note": "", "weight": 100, "signature": "Exploit.JS.Pdfka.bde", "signature_iden": 89010108}, {"engine": "url_snort_analysis", "note": "", "weight": 0, "signature": "Malicious.URL.FEBeta", "signature_iden": 88970678}, {"engine": "url_snort_analysis", "note": "", "weight": 0, "signature": "Malicious.URL.FEBeta", "signature_iden": 88970506}, {"engine": "url_snort_analysis", "note": "", "weight": 0, "signature": "Malicious.URL.FEBeta", "signature_iden": 88970363}]}, "url": "http://bestfreedns.in//load.php?spl=MS09-002"}], "rewrite_count": 0}"
+
