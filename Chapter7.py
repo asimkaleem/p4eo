@@ -63,18 +63,18 @@ __author__ = 'asim'
 # and produce an output as shown below.
 #-----------------------------------------------------------------------------------------------------------------------
 # Use the file name mbox-short.txt as the file name
-fname = input("Enter file name: ")
-fh = open(fname)
-total = 0
-count = 0
-for line in fh:
-    if line.startswith("X-DSPAM-Confidence:"):
-        pos = line.find(":")
-        count = count+1
-        getNumber = float(line[pos+1:])
-        total = total+getNumber
-average = total/count
-print("Average spam confidence:" ,average)
+# fname = input("Enter file name: ")
+# fh = open(fname)
+# total = 0
+# count = 0
+# for line in fh:
+#     if line.startswith("X-DSPAM-Confidence:"):
+#         pos = line.find(":")
+#         count = count+1
+#         getNumber = float(line[pos+1:])
+#         total = total+getNumber
+# average = total/count
+# print("Average spam confidence:" ,average)
 
 
 #
@@ -88,4 +88,32 @@ print("Average spam confidence:" ,average)
 # print "Final List", finalList
 
 
+# defining blank list
+# my_list = []
+# print(type(my_list))
+#
+# my_list.append("asim")
+# print(my_list)
+# print(my_list[0])
+# my_list[0] = 38
+# print (my_list)
+# my_list = [28,29,42]
+# print (my_list)
+# for i in my_list:
+#     print(i)
+# for i in range(len(my_list)):
+#     print(my_list[i])
+
+# SLICING lists
+my_list = [1,2,3,4,1,5,6,1,7,8,9,0]
+for i in my_list:
+    print(i)
+print(9 in my_list)
+print ("list maintain order")
+print("sorting", my_list.sort())
+my_list_2 = ["asim", "sasdfna", "sabir"]
+print("sorting:",my_list_2.sort() )
+my_list_2.sort()
+for friend in my_list_2:
+    print(friend)
 
